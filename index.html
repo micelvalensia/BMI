@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kalkulator BMI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Kalkulator BMI</h1>
+  <div class="container">
+    <div class="form-group">
+      <label for="gender">Jenis Kelamin:</label>
+      <select id="gender">
+        <option value="male">Laki-laki</option>
+        <option value="female">Perempuan</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="age">Usia:</label>
+      <input type="number" id="age" placeholder="Masukkan usia" required>
+    </div>
+    <div class="form-group">
+      <label for="weight">Berat Badan (kg):</label>
+      <input type="number" id="weight" placeholder="Masukkan berat badan" required>
+    </div>
+    <div class="form-group">
+      <label for="height">Tinggi Badan (cm):</label>
+      <input type="number" id="height" placeholder="Masukkan tinggi badan" required>
+    </div>
+    <input type="submit" value="Hitung" onclick="calculateBMI()">
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+  </div>
+</body>
+</html>
